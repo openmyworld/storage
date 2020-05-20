@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hikaru</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/svg-inject.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <figure class="nav__logo">
+            <a href="javascript:void(0)" class="nav__logo-link">
+              <img src="img/logo.png" alt="" class="nav__logo-image">
+            </a>
+          </figure>
+          <button class="hamburger hamburger--vortex menu__hamburger" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="javascript:void(0)" class="nav__link">
+                おすすめ <br>
+                オンラインストレージ11選</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)" class="nav__link">カテゴリ別比較</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)" class="nav__link">導入ガイド</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero__inner">
+        <div class="container">
+          <div class="hero__figure">
+            <span class="hero__figure-text"><img src="img/2.svg" onload="SVGInject(this)" class="hero__figure-image">ファイル共有</span><span class="hero__figure-text"><img src="img/1.svg" onload="SVGInject(this)" class="hero__figure-image">バックアップ</span>
+          </div>
+          <p class="hero__text">
+            <span class="hero__text-underline">あなたにぴったりの</span><br>
+            <span class="hero__text-underline">オンラインストレージサービスがわかる！</span>
+          </p>
+          <h1 class="hero__heading">
+            <span class="hero__heading_cyan">企業・法人</span> <span class="hero__heading_blue">向け</span><br>
+            <span class="hero__heading_red hero__heading_red_medium">オンラインストレージ</span><br>
+            <span class="hero__heading_red hero__heading_red_big">徹底比較！</span>
+          </h1>
+          <div class="hero__comparison">
+            <a href="javascript:void(0)" class="hero__comparison-button">一覧比較へ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="container search__inner">
+        <h2 class="search__heading">
+          <img src="img/search.svg" onload="SVGInject(this)" class="search__heading-icon">条件にあった<br class="search__heading-break">オンラインストレージを探す
+        </h2>
+        <form class="form" method="post" action="#">
+          <table class="table-search">
+            <tr class="table-search__row table-search__row-1">
+              <th rowspan="2" class="table-search__heading">
+                <img src="img/user.svg" onload="SVGInject(this)" class="icon-user">ユーザー数
+              </th>
+              <td class="table-search__cell table-search__cell-1 ">
+                <label for="five" class="table__search-radio">～5人<input type="radio" value="5" id="five" name="number-users" checked><span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+              <td class="table-search__cell table-search__cell-2">
+                <label for="five-ten" class="table__search-radio">5人～10人<input type="radio" value="10" id="five-ten" name="number-users"><span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+              <td class="table-search__cell table-search__cell-3">
+                <label for="ten-twenty" class="table__search-radio">10人～20人<input type="radio" value="20" id="ten-twenty" name="number-users"><span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+            </tr>
+            <tr class="table-search__row table-search__row-2">
+              <td class="table-search__cell table-search__cell-1">
+                <label for="fifty" class="table__search-radio">20人～50人<input type="radio" value="50" id="fifty" name="number-users"><span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+              <td class="table-search__cell table-search__cell-2">
+                <label for="fifty-more" class="table__search-radio">50人以上<input type="radio" value="50" id="fifty-more" name="number-users"><span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+              <td class="table-search__cell table-search__cell-3">
+                <label for="stick" class="table__search-radio">こだわらない<input type="radio" value="stick" id="stick" name="number-users"><span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+            </tr>
+            <tr class="table-search__row table-search__row-3">
+              <th class="table-search__heading">
+                <img src="img/phone.svg" onload="SVGInject(this)" class="icon-phone">モバイル対応
+              </th>
+              <td class="table-search__cell table-search__cell-1">
+                <label for="mobile-and" class="table__search-radio">あり<input type="radio" name="mobile-enable" value="mobile-and" id="mobile-and"><span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+              <td class="table-search__cell table-search__cell-2">
+                <label for="mobile-stick" class="table__search-radio">
+                  こだわらない
+                  <input type="radio" name="mobile-enable" value="mobile-stick" id="mobile-stick">
+                  <span class="table-search__fake-radio"></span>
+                </label>
+              </td>
+              <td class="table-search__cell table-search__cell-3"></td>
+            </tr>
+            <tr class="table-search__row table-search__row-4">
+              <th class="table-search__heading">
+                <img src="img/light.svg" onload="SVGInject(this)" class="icon-light">こだわり条件
+              </th>
+              <td colspan="3" class="table-search__cell table-search__cell-1">
+                <label for="price" class="table-search__checkbox">
+                  価格が安い
+                  <input type="checkbox" id="price" value="cheap" name="condition">
+                  <span class="table-search__fake-checkbox"></span>
+                </label>
+                <label for="capacity" class="table-search__checkbox">
+                  容量が大きい
+                  <input type="checkbox" id="capacity" value="capacity" name="condition">
+                  <span class="table-search__fake-checkbox"></span>
+                </label>
+                <label for="security" class="table-search__checkbox">
+                  セキュリティが万全
+                  <input type="checkbox" id="security" value="security" name="condition">
+                  <span class="table-search__fake-checkbox"></span>
+                </label>
+                <label for="function" class="table-search__checkbox">
+                  機能が充実
+                  <input type="checkbox" id="function" value="function" name="condition">
+                  <span class="table-search__fake-checkbox"></span>
+                </label>
+              </td>
+            </tr>
+          </table>
+          <div class="search__submit">
+            <button type="submit" class="search__button">
+              <img src="img/search-small.svg" class="search__button-icon" onload="SVGInject(this)">検索する
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="container">
+        <h2 class="feature__heading">おすすめカテゴリ別<br>
+          オンラインストレージサービス
+        </h2>
+        <div class="feature__wrap">
+          <table class="feature-table">
+            <thead class="feature-head">
+              <tr class="feature-head-row">
+                <th class="feature-head-row__cell-name">サービス名</th>
+                <th class="feature-head-row__cell-degree">おすすめ度</th>
+                <th class="feature-head-row__cell-price">価格</th>
+                <th class="feature-head-row__cell-capacity">容量</th>
+                <th class="feature-head-row__cell-user">ユーザー数</th>
+                <th class="feature-head-row__cell-security">セキュリティ</th>
+                <th class="feature-head-row__cell-website">公式サイト</th>
+              </tr>
+            </thead>
+            <tbody class="feature-body">
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/samba-small.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/box-small.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+              <tr class="feature-body-row">
+                <td class="feature-body-row__cell-name"><img src="img/grey.jpg" alt=""></td>
+                <td class="feature-body-row__cell-degree">
+                  <img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-red.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star"><img src="img/star-grey.png" alt="star" class="icon-star">
+                </td>
+                <td class="feature-body-row__cell-price">
+                  <img src="img/icon-verygood.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-capacity">
+                  <img src="img/icon-good.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-user">
+                  <img src="img/icon-normal.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-security">
+                  <img src="img/icon-bad.png" alt="">
+                </td>
+                <td class="feature-body-row__cell-website">
+                  <a href="javascript:void(0)" class="feature-body-row__cell-url">公式サイトへ</a>
+                </td>
+              </tr>
+          
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+    <div class="function">
+      <div class="container">
+        <h2 class="function__heading">
+          カテゴリ別 <br>
+          オンラインストレージサービス
+        </h2>
+        <ul class="function__list">
+          <li class="function__item">
+            <a href="javascript:void(0)" class="function__link">
+              <figure class="function__image">
+                <img src="img/security.svg" onload="SVGInject(this)" alt="" class="function__src">
+              </figure>
+              <h3 class="function__title">
+                <span class="function__title_red">セキュリティが万全</span><span class="function__title_blue">な</span><br>
+                <span class="function__title_blue">オンラインストレージ</span>
+              </h3>
+            </a>
+          </li>
+          <li class="function__item">
+            <a href="javascript:void(0)" class="function__link">
+              <figure class="function__image">
+                <img src="img/online-storage.svg" onload="SVGInject(this)" alt="" class="function__src">
+              </figure>
+              <h3 class="function__title">
+                <span class="function__title_red">操作性が抜群</span><span class="function__title_blue">な</span><br>
+                <span class="function__title_blue">オンラインストレージ</span>
+              </h3>
+            </a>
+          </li>
+          <li class="function__item">
+            <a href="javascript:void(0)" class="function__link">
+              <figure class="function__image">
+                <img src="img/multiple-user.svg" onload="SVGInject(this)" alt="" class="function__src">
+              </figure>
+              <h3 class="function__title">
+                <span class="function__title_red">使用可能ユーザー数が多い</span><br>
+                <span class="function__title_blue">オンラインストレージ</span>
+              </h3>
+            </a>
+          </li>
+          <li class="function__item">
+            <a href="javascript:void(0)" class="function__link">
+              <figure class="function__image">
+                <img src="img/like.svg" onload="SVGInject(this)" alt="" class="function__src">
+              </figure>
+              <h3 class="function__title">
+                <span class="function__title_red">低価格でおすすめ！</span><span class="function__title_blue">な</span><br>
+                <span class="function__title_blue">オンラインストレージ</span>
+              </h3>
+            </a>
+          </li>
+          <li class="function__item">
+            <a href="javascript:void(0)" class="function__link">
+              <figure class="function__image">
+                <img src="img/disk.svg" onload="SVGInject(this)" alt="" class="function__src">
+              </figure>
+              <h3 class="function__title">
+                <span class="function__title_red">ストレージ容量が大きい</span><br>
+                <span class="function__title_blue">オンラインストレージ</span>
+              </h3>
+            </a>
+          </li>
+          <li class="function__item">
+            <a href="javascript:void(0)" class="function__link">
+              <figure class="function__image">
+                <img src="img/function.svg" onload="SVGInject(this)" alt="" class="function__src">
+              </figure>
+              <h3 class="function__title">
+                <span class="function__title_red">機能・オプションが充実！</span><span class="function__title_blue">な</span><br>
+                <span class="function__title_blue">オンラインストレージ</span>
+              </h3>
+            </a>
+          </li>
+          <li class="function__item">
+            <a href="javascript:void(0)" class="function__link">
+              <figure class="function__image">
+                <img src="img/support.svg" onload="SVGInject(this)" alt="" class="function__src">
+              </figure>
+              <h3 class="function__title">
+                <span class="function__title_red">サポート体制が万全</span><br>
+                <span class="function__title_blue">なオンラインストレージ</span>
+              </h3>
+            </a>
+          </li>
+        </ul>
+        <div class="function__button">
+          <a href="javascript:void(0)" class="function__see-more">もっと見る</a>
+        </div>
+      </div>
+    </div>
+    <div class="recommended">
+      <div class="container">
+        <h2 class="recommended__heading">
+          おすすめ <br>
+          オンラインストレージ10選
+        </h2>
+        <ul class="recommended__list">
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/box-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">Box</h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/direct-cloud-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">Direct Cloud BOX</h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/dropbox-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">Dropbox Business</h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/fileservercloud-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">
+                fileservercloud <br>
+                クラウドファイルサーバtype2
+              </h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/fujitsu-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">
+                FUJITSU Cloud Service <br>
+                クラウドファイルサーバー
+              </h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/fileforce-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">fireforce</h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/ixmark-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">ixmark</h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/samba-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">
+                セキュアサンバ・ <br>
+                セキュアサンバPro
+              </h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/fileservercloud-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">どこでもキャビネット</h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/gmo-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">ファイル執事</h3>
+            </a>
+          </li>
+          <li class="recommended__item">
+            <a href="javascript:void(0)" class="recommended__link">
+              <figure class="recommended__logo">
+                <img src="img/rakuten-logo.png" alt="" class="recommended__image">
+              </figure>
+              <h3 class="recommended__title">
+                楽天クラウド・ <br>
+                セキュアドライブプラス
+              </h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container banner__inner">
+        <a href="javascript:void(0)" class="banner__image">
+          <img src="img/banner.jpg" alt="" class="banner__src">
+        </a>
+      </div>
+    </div>
+		<footer class="footer">
+			<div class="container footer__inner">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="javascript:void(0)" class="footer__link">運営会社</a>
+          </li>
+          <li class="footer__item">
+            <a href="javascript:void(0)" class="footer__link">サイトマップ</a>
+          </li>
+          <li class="footer__item">
+            <a href="javascript:void(0)" class="footer__link">お問い合わせ</a>
+          </li>
+        </ul>
+        <p class="footer__copyright">&copy; 2018 オンラインストレージナビ</p>
+      </div>
+		</footer>
+
+    <script src="js/user.js"></script>
+	</body>
+</html>
