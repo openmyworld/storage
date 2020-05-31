@@ -133,22 +133,6 @@ body {
 
   @include screen('tablet') {
     display: inline-block;
-    padding: 0;
-  }
-}
-
-.hamburger-inner {
-  &,
-  &::before,
-  &::after {
-    width: 28px;
-    background-color: $java;
-  }
-}
-
-.hamburger-box {
-  @include screen('tablet') {
-    width: 28px;
   }
 }
 
